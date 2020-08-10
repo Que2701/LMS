@@ -6,10 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Data\Student_Preferences_Test.csv">
+    <None Update="Data\Student_Preferences_Test.tsv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Student_Preferences_Train.csv">
+    <None Update="Data\Student_Preferences_Train.tsv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
