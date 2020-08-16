@@ -12,7 +12,7 @@ namespace StudentPreferenceAiModelDemoML.ConsoleApp
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"D:\Source\Repos\Projects\LMS\StudentPreferenceAiModelDemo\StudentPreferenceAiModel\Data\Student_Preferences_Train.csv";
+        private static string TRAIN_DATA_FILEPATH = @"D:\Source\Repos\Projects\LMS\StudentPreferenceAiModelDemo\StudentPreferenceAiModel\Data\Student_Preferences_Train.tsv";
         private static string MODEL_FILEPATH = @"C:\Users\tumelom\AppData\Local\Temp\MLVSTools\StudentPreferenceAiModelDemoML\StudentPreferenceAiModelDemoML.Model\MLModel.zip";
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
@@ -24,7 +24,7 @@ namespace StudentPreferenceAiModelDemoML.ConsoleApp
             IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
                                             path: TRAIN_DATA_FILEPATH,
                                             hasHeader: true,
-                                            separatorChar: ';',
+                                            separatorChar: '\t',
                                             allowQuoting: true,
                                             allowSparse: false);
 

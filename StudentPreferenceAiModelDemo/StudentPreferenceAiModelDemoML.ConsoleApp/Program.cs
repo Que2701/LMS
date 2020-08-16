@@ -12,7 +12,7 @@ namespace StudentPreferenceAiModelDemoML.ConsoleApp
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
-                Description = @"When trying to remember someone�s telephone number, or something new, it helps me to get a picture of it in my mind.",
+                Description = @"When trying to remember someone�s telephone number, or something new, it helps me to get a picture of it in my mind",
             };
 
             // Make a single prediction on the sample data and print results
